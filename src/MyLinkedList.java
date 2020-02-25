@@ -27,6 +27,7 @@ public class MyLinkedList {
         }
         if (head == null) {
             head = node;
+            return;
         } else {
             Node temp = head;
             while (temp.getNext() != null) {

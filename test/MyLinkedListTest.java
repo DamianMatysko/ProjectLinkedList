@@ -114,6 +114,10 @@ class MyLinkedListTest {
         myLinkedList.addToFront(node1);
         assertTrue(myLinkedList.remove(node1));
         assertFalse(myLinkedList.remove(node1));
+
+        myLinkedList.removeAll();
+        myLinkedList.add(44193, node1);
+        assertEquals(node1, myLinkedList.getHead());
     }
 
     @Test

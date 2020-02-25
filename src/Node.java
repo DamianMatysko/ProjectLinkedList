@@ -1,13 +1,13 @@
 public class Node<T> {
-    private String data;
+    private T data;
     private Node next;
 
-    public Node(String n) {
-        this.data = n;
+    public Node(T data) {
+        this.data = data;
         this.next = null;
     }
 
-    public String getData() {
+    public T getData() {
         return data;
     }
 

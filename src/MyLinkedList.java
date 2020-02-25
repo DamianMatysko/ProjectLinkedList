@@ -1,6 +1,10 @@
 public class MyLinkedList {
     private Node head;
 
+    public Node getHead() {
+        return head;
+    }
+
     public MyLinkedList() {
         this.head = null;
     }
@@ -107,7 +111,7 @@ public class MyLinkedList {
             return null;
         }
         Node tmp = head;
-        if (tmp.getData() instanceof  String){
+        if (!(tmp.getData() instanceof  String)){
             return null;
         }
         while (tmp != null) {
@@ -118,5 +122,4 @@ public class MyLinkedList {
         }
         return null;
     }
-
 }
